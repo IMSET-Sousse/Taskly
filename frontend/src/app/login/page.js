@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -22,9 +21,7 @@ export default function Login() {
     try {
       const response = await fetch('http://127.0.0.1:8000/account/login/', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
 
@@ -35,8 +32,8 @@ export default function Login() {
         setMessageType("success");
 
         if (result.token) {
-          localStorage.setItem('token', result.token); // ✅ Use consistent key
-          window.dispatchEvent(new Event('authChange')); // ✅ Notify Header
+          localStorage.setItem('token', result.token);
+          window.dispatchEvent(new Event('authChange'));
 
           setTimeout(() => {
             router.push('/');
@@ -57,12 +54,13 @@ export default function Login() {
   }
 
   return (
-    <div className="container-fluid bg-light min-vh-100 d-flex align-items-center justify-content-center">
-      <div className="row shadow-lg rounded overflow-hidden bg-white w-100" style={{ maxWidth: "900px" }}>
-        
-  
-        {/* Right Column: Login Form */}
-        <div className="col-md-6 p-5">
+    <div
+      className="min-h-screen bg-cover bg-center flex items-center justify-center px-4"
+      style={{
+      }}
+    >
+      <div className="w-full max-w-4xl bg-white shadow-lg rounded-3xl overflow-hidden flex justify-center">
+        <div className="p-5 w-full md:w-1/2">
           <h2 className="mb-4 text-primary fw-bold">Welcome Back 👋</h2>
           <p className="text-muted mb-4">Please enter your credentials to access your account.</p>
 

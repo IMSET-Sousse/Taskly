@@ -2,17 +2,23 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-50 to-blue-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div
+      className="min-h-screen bg-cover bg-center flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+      style={{
+      
+      }}
+    >
       <div className="max-w-5xl mx-auto space-y-12">
         {/* Header Section */}
-        <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-blue-700 mb-4">
-            About Us
-          </h1>
-          <p className="text-lg text-gray-600">
-            Learn more about who we are, our mission, and what drives our work.
-          </p>
-        </div>
+       <div className="text-center">
+  <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
+    About Us
+  </h1>
+  <p className="text-lg text-white">
+    Learn more about who we are, our mission, and what drives our work.
+  </p>
+</div>
+
 
         {/* About Section */}
         <div className="bg-white shadow-xl rounded-3xl p-8 space-y-8">

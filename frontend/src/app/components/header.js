@@ -32,11 +32,10 @@ export default function Header() {
 
         <div className="d-flex ms-auto">
           <a className="navbar-brand text-white me-3" href="/about">About</a>
-          <a className="navbar-brand text-white me-3" href="#">Service</a>
 
           {/* Conditionally render the 'My Todos' link */}
           {isLoggedIn && (
-            <a className="navbar-brand text-white me-3" href="/mytodos">My Todos</a>
+            <a className="navbar-brand text-white me-3" href="/mytodos">My Taskly</a>
           )}
 
           {isLoggedIn ? (

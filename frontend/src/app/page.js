@@ -7,7 +7,7 @@ export default function Home() {
         {/* Header Section */}
         <div className="text-center mb-10">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-blue-700 mb-4">
-            My To-Do Application
+            Taskly
           </h1>
           <p className="text-lg text-gray-600">
             Stay organized, boost productivity, and never miss a task again.
@@ -21,7 +21,7 @@ export default function Home() {
               What is this App?
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              The To-Do Application is designed to help you stay on top of your
+              The Taskly is designed to help you stay on top of your
               daily tasks. Whether you're planning your day, organizing long-term
               projects, or simply jotting down reminders, this app has you covered.
               It’s clean, simple, and intuitive.

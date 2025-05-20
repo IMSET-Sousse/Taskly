@@ -2,68 +2,72 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="container-fluid bg-light p-5">
-      <div className="row">
+    <div className="min-h-screen bg-gradient-to-r from-blue-50 to-blue-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl w-full bg-white rounded-3xl shadow-2xl p-10">
         {/* Header Section */}
-        <div className="col-12 text-center mb-4">
-          <h1 className="display-3 font-weight-bold text-primary">
+        <div className="text-center mb-10">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-blue-700 mb-4">
             My To-Do Application
           </h1>
-          <p className="lead text-muted">
+          <p className="text-lg text-gray-600">
             Stay organized, boost productivity, and never miss a task again.
           </p>
         </div>
 
         {/* Description Section */}
-        <div className="col-12 col-md-8 mx-auto bg-white p-4 rounded shadow-sm">
-          <h2 className="h4 text-dark">What is this App?</h2>
-          <p className="text-muted">
-            The To-Do Application is designed to help you stay on top of your
-            daily tasks. Whether you're planning your day, organizing long-term
-            projects, or simply jotting down reminders, this app has you covered.
-            It’s clean, simple, and intuitive.
-          </p>
-
-          <h2 className="h4 mt-4 text-dark">How It Works</h2>
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">
-              <strong>Add tasks:</strong> Create tasks and set deadlines to stay
-              organized.
-            </li>
-            <li className="list-group-item">
-              <strong>Mark as completed:</strong> Check off tasks as you finish
-              them.
-            </li>
-            <li className="list-group-item">
-              <strong>Delete tasks:</strong> Remove unnecessary tasks from the
-              list.
-            </li>
-          </ul>
-
-          <h2 className="h4 mt-4 text-dark">Why Use This App?</h2>
-          <p className="text-muted">
-            <strong>Efficiency:</strong> The app helps you manage your time more
-            effectively by keeping all your tasks in one place.
-          </p>
-          <p className="text-muted">
-            <strong>Simplicity:</strong> The interface is minimalistic, ensuring
-            ease of use without distractions.
-          </p>
-          <p className="text-muted">
-            <strong>Flexibility:</strong> Whether you're working on personal
-            tasks or team projects, this app adapts to your needs.
-          </p>
-
-          {/* Optional Image Section */}
-          <div className="text-center mt-4">
-            <Image
-              src="/todo-illustration.png" // Use a relevant image from your assets
-              alt="To-Do Illustration"
-              width={500}
-              height={300}
-              className="img-fluid rounded"
-            />
+        <div className="space-y-8">
+          <div>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              What is this App?
+            </h2>
+            <p className="text-gray-600 leading-relaxed">
+              The To-Do Application is designed to help you stay on top of your
+              daily tasks. Whether you're planning your day, organizing long-term
+              projects, or simply jotting down reminders, this app has you covered.
+              It’s clean, simple, and intuitive.
+            </p>
           </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              How It Works
+            </h2>
+            <ul className="list-disc list-inside text-gray-600 space-y-2">
+              <li>
+                <strong className="text-gray-800">Add tasks:</strong> Create tasks and set deadlines to stay
+                organized.
+              </li>
+              <li>
+                <strong className="text-gray-800">Mark as completed:</strong> Check off tasks as you finish
+                them.
+              </li>
+              <li>
+                <strong className="text-gray-800">Delete tasks:</strong> Remove unnecessary tasks from the
+                list.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              Why Use This App?
+            </h2>
+            <ul className="space-y-2">
+              <li className="text-gray-600">
+                <strong className="text-gray-800">Efficiency:</strong> Manage your time more
+                effectively by keeping all your tasks in one place.
+              </li>
+              <li className="text-gray-600">
+                <strong className="text-gray-800">Simplicity:</strong> Minimalistic interface for ease of use
+                without distractions.
+              </li>
+              <li className="text-gray-600">
+                <strong className="text-gray-800">Flexibility:</strong> Adapts to personal or team projects with ease.
+              </li>
+            </ul>
+          </div>
+
+       
         </div>
       </div>
     </div>

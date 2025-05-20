@@ -60,17 +60,7 @@ export default function Login() {
     <div className="container-fluid bg-light min-vh-100 d-flex align-items-center justify-content-center">
       <div className="row shadow-lg rounded overflow-hidden bg-white w-100" style={{ maxWidth: "900px" }}>
         
-        {/* Left Column: Illustration */}
-        <div className="col-md-6 d-none d-md-flex p-0">
-          <Image
-            src="/login.jpg"
-            alt="Login Illustration"
-            width={600}
-            height={600}
-            className="img-fluid h-100 w-100 object-fit-cover"
-          />
-        </div>
-
+  
         {/* Right Column: Login Form */}
         <div className="col-md-6 p-5">
           <h2 className="mb-4 text-primary fw-bold">Welcome Back 👋</h2>

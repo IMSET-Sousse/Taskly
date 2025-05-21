@@ -43,9 +43,15 @@
 
 ### Diagrammes
 
-#### Use-case Diagram:
-![Diagramme de cas d’utilisation](docs/use_case.png)
+ Use-case Diagram:
 
-#### Sequence Diagram:
+![Use Case Diagram](/docs/use case.png)
 
-![Diagramme de dactivite](docs/Diagramme d’Activité.png)
+- Sequence Diagram:
+
+![Sequence Diagram](/docs/Diagramme d’Activité.png)
+
+#### Package Diagram
+
+
+![Package Diagram](/docs/Package Diagram.png)

@@ -45,15 +45,15 @@
 
 #### Use-case Diagram
 
-![Use Case Diagram](docs/use_case.png)  
+![Use Case Diagram](/docs/use%20case.png)  
 [Voir l'image](docs/use_case.png)
 
 #### Sequence Diagram
 
-![Sequence Diagram](docs/activity_diagram.png)  
+![Sequence Diagram](/docs/Diagramme%20d’Activité.png)  
 [Voir l'image](docs/activity_diagram.png)
 
 #### Package Diagram
 
-![Package Diagram](docs/package_diagram.png)  
+![Package Diagram](/docs/Package%20Diagram.png)  
 [Voir l'image](docs/package_diagram.png)

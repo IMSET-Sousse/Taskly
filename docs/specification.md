@@ -1,64 +1,51 @@
-# 📝 Spécification Taskly (Django + Next.js)
+# Specification
 
-## 📘 Présentation Générale
+## Members:
+-Mohamed Amine FRAD
+- Ahmed MOUELHI
+---
 
-Ce projet est une application web de type **Taskly** permettant aux utilisateurs de créer, modifier, supprimer et gérer leurs tâches quotidiennes. Il est construit avec :
+## 1. Project Overview
 
-- **Frontend :** Next.js (React + Tailwind CSS)
-- **Backend :** Django + Django REST Framework (DRF)
-- **Base de données :** SQLite (développement) ou PostgreSQL (production)
-- **Authentification :** JWT (JSON Web Token)
+**Name**: Taskly  
+**Purpose**: Une application web permettant aux utilisateurs de gérer efficacement leurs tâches quotidiennes via une interface simple et intuitive.  
+**Scope**: Application complète avec frontend (Next.js) et backend (Django). 
+**Fonctionnalités** : inscription, connexion, gestion des tâches (CRUD), sessions sécurisées, interface responsive.
 
 ---
 
-## ⚙️ Stack Technologique
+## 2. Target Audience
 
-| Côté       | Technologie              |
-|------------|--------------------------|
-| Frontend   | Next.js 14+, React, Tailwind CSS |
-| Backend    | Django 4+, Django REST Framework |
-| Auth       | JWT via Simple JWT ou DRF Token Auth |
-| API        | RESTful API              |
-| DB         | SQLite / PostgreSQL      |
+- Étudiants souhaitant organiser leur emploi du temps.
+- Employés gérant des tâches ou des projets simples.
+- Toute personne souhaitant une app de gestion personnelle des tâches.
 
 ---
 
-## 🎯 Fonctionnalités
+## 3. Technical Stack
 
-### Authentification
-- [x] Inscription utilisateur
-- [x] Connexion / Déconnexion
-- [x] Authentification sécurisée avec token
-
-### Gestion des Tâches (CRUD)
-- [x] Créer une tâche
-- [x] Afficher la liste des tâches
-- [x] Modifier une tâche
-- [x] Supprimer une tâche
-- [x] Marquer une tâche comme terminée / non terminée
-
-### Interface
-- [x] Interface utilisateur claire et responsive
-- [x] Filtres (toutes, terminées, non terminées)
-- [ ] Tri par date ou priorité
-- [ ] Notifications (à venir)
+- **Frontend** : Next.js
+- **Backend** : Django + Django REST Framework  
+- **Base de données** : SQLite 
+- **Version Control** : Git + GitHub  
 
 ---
 
-## 🧩 Modèle de Données Django
+## 4. Resources (Rôles Équipe)
 
-```python
-# models.py
-from django.contrib.auth.models import User
-from django.db import models
+- [Ton Nom] – Développement Backend Django
+- [Membre 2] – Développement Frontend Next.js
+- [Membre 3] – Intégration + Authentification + Tests
 
-class Task(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='tasks')
-    title = models.CharField(max_length=255)
-    description = models.TextField(blank=True)
-    is_completed = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-    due_date = models.DateField(null=True, blank=True)
+---
 
-    def __str__(self):
-        return self.title
+## 5. Functional Requirements (Fonctionnalités)
+
+### Diagrammes
+
+#### Use-case Diagram:
+![Diagramme de cas d’utilisation](docs/use_case.png)
+
+#### Sequence Diagram:
+
+![Diagramme de dactivite](docs/Diagramme d’Activité.png)
